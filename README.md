@@ -16,3 +16,6 @@ target is iOS 15. Uses MVVM architecture and Core Data for data persistance.
 
 If I were to continue with this project, I would like to allow the user to select a custom image for their list along with a custom accent color
 for each list similar to the reminders app. I would also like to allow the user to see their completed todo items for each list and I would like to support multiple scenes in an iPadOS environment.
+
+Below is a screenshot of the app used on iPad:
+![iPad ScreenShot](./ReferenceImages/ScreenShot)
