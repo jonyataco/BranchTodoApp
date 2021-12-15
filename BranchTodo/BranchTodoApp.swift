@@ -1,10 +1,3 @@
-//
-//  BranchTodoApp.swift
-//  BranchTodo
-//
-//  Created by Jonathan Yataco on 12/15/21.
-//
-
 import SwiftUI
 
 @main
@@ -13,7 +6,7 @@ struct BranchTodoApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TodoLists()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

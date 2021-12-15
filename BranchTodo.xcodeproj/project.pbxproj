@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C318011A276A354100685E08 /* BranchTodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3180119276A354100685E08 /* BranchTodoApp.swift */; };
-		C318011C276A354100685E08 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C318011B276A354100685E08 /* ContentView.swift */; };
+		C318011C276A354100685E08 /* TodoLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = C318011B276A354100685E08 /* TodoLists.swift */; };
 		C318011E276A354200685E08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C318011D276A354200685E08 /* Assets.xcassets */; };
 		C3180121276A354200685E08 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3180120276A354200685E08 /* Preview Assets.xcassets */; };
 		C3180123276A354200685E08 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3180122276A354200685E08 /* Persistence.swift */; };
@@ -16,6 +16,15 @@
 		C3180130276A354200685E08 /* BranchTodoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C318012F276A354200685E08 /* BranchTodoTests.swift */; };
 		C318013A276A354200685E08 /* BranchTodoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3180139276A354200685E08 /* BranchTodoUITests.swift */; };
 		C318013C276A354200685E08 /* BranchTodoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C318013B276A354200685E08 /* BranchTodoUITestsLaunchTests.swift */; };
+		C318014A276A3B1500685E08 /* TodoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3180149276A3B1500685E08 /* TodoListCell.swift */; };
+		C318014C276A3BAA00685E08 /* NewListModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C318014B276A3BAA00685E08 /* NewListModal.swift */; };
+		C3180150276A3E4E00685E08 /* TodoList+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C318014F276A3E4E00685E08 /* TodoList+Ext.swift */; };
+		C3180154276A423700685E08 /* ListOfTodos.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3180153276A423700685E08 /* ListOfTodos.swift */; };
+		C3180156276A436C00685E08 /* TodoItem+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3180155276A436C00685E08 /* TodoItem+Ext.swift */; };
+		C3180158276A4ACA00685E08 /* ListOfTodosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3180157276A4ACA00685E08 /* ListOfTodosViewModel.swift */; };
+		C318015A276A58F300685E08 /* TodoListsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3180159276A58F300685E08 /* TodoListsViewModel.swift */; };
+		C318015D276A69F200685E08 /* NewTodoItemModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C318015C276A69F200685E08 /* NewTodoItemModal.swift */; };
+		C318015F276A765100685E08 /* TodoItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C318015E276A765100685E08 /* TodoItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +47,8 @@
 /* Begin PBXFileReference section */
 		C3180116276A354100685E08 /* BranchTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BranchTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3180119276A354100685E08 /* BranchTodoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchTodoApp.swift; sourceTree = "<group>"; };
-		C318011B276A354100685E08 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		C318011D276A354200685E08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C318011B276A354100685E08 /* TodoLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoLists.swift; sourceTree = "<group>"; };
+		C318011D276A354200685E08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = BranchTodo/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		C3180120276A354200685E08 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C3180122276A354200685E08 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		C3180125276A354200685E08 /* BranchTodo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BranchTodo.xcdatamodel; sourceTree = "<group>"; };
@@ -48,6 +57,15 @@
 		C3180135276A354200685E08 /* BranchTodoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BranchTodoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3180139276A354200685E08 /* BranchTodoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchTodoUITests.swift; sourceTree = "<group>"; };
 		C318013B276A354200685E08 /* BranchTodoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchTodoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C3180149276A3B1500685E08 /* TodoListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListCell.swift; sourceTree = "<group>"; };
+		C318014B276A3BAA00685E08 /* NewListModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewListModal.swift; sourceTree = "<group>"; };
+		C318014F276A3E4E00685E08 /* TodoList+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TodoList+Ext.swift"; sourceTree = "<group>"; };
+		C3180153276A423700685E08 /* ListOfTodos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfTodos.swift; sourceTree = "<group>"; };
+		C3180155276A436C00685E08 /* TodoItem+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TodoItem+Ext.swift"; sourceTree = "<group>"; };
+		C3180157276A4ACA00685E08 /* ListOfTodosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfTodosViewModel.swift; sourceTree = "<group>"; };
+		C3180159276A58F300685E08 /* TodoListsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListsViewModel.swift; sourceTree = "<group>"; };
+		C318015C276A69F200685E08 /* NewTodoItemModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTodoItemModal.swift; sourceTree = "<group>"; };
+		C318015E276A765100685E08 /* TodoItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +116,10 @@
 		C3180118276A354100685E08 /* BranchTodo */ = {
 			isa = PBXGroup;
 			children = (
+				C318015B276A58F800685E08 /* ViewModels */,
+				C318014E276A3E3D00685E08 /* Extensions */,
+				C3180148276A3B0600685E08 /* Views */,
 				C3180119276A354100685E08 /* BranchTodoApp.swift */,
-				C318011B276A354100685E08 /* ContentView.swift */,
 				C318011D276A354200685E08 /* Assets.xcassets */,
 				C3180122276A354200685E08 /* Persistence.swift */,
 				C3180124276A354200685E08 /* BranchTodo.xcdatamodeld */,
@@ -131,6 +151,37 @@
 				C318013B276A354200685E08 /* BranchTodoUITestsLaunchTests.swift */,
 			);
 			path = BranchTodoUITests;
+			sourceTree = "<group>";
+		};
+		C3180148276A3B0600685E08 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C318015E276A765100685E08 /* TodoItemCell.swift */,
+				C318011B276A354100685E08 /* TodoLists.swift */,
+				C3180149276A3B1500685E08 /* TodoListCell.swift */,
+				C318015C276A69F200685E08 /* NewTodoItemModal.swift */,
+				C318014B276A3BAA00685E08 /* NewListModal.swift */,
+				C3180153276A423700685E08 /* ListOfTodos.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C318014E276A3E3D00685E08 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C318014F276A3E4E00685E08 /* TodoList+Ext.swift */,
+				C3180155276A436C00685E08 /* TodoItem+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C318015B276A58F800685E08 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C3180159276A58F300685E08 /* TodoListsViewModel.swift */,
+				C3180157276A4ACA00685E08 /* ListOfTodosViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,10 +314,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C318014C276A3BAA00685E08 /* NewListModal.swift in Sources */,
+				C318015D276A69F200685E08 /* NewTodoItemModal.swift in Sources */,
 				C3180123276A354200685E08 /* Persistence.swift in Sources */,
-				C318011C276A354100685E08 /* ContentView.swift in Sources */,
+				C318014A276A3B1500685E08 /* TodoListCell.swift in Sources */,
+				C3180154276A423700685E08 /* ListOfTodos.swift in Sources */,
+				C3180156276A436C00685E08 /* TodoItem+Ext.swift in Sources */,
+				C3180158276A4ACA00685E08 /* ListOfTodosViewModel.swift in Sources */,
+				C318011C276A354100685E08 /* TodoLists.swift in Sources */,
 				C318011A276A354100685E08 /* BranchTodoApp.swift in Sources */,
+				C318015A276A58F300685E08 /* TodoListsViewModel.swift in Sources */,
 				C3180126276A354200685E08 /* BranchTodo.xcdatamodeld in Sources */,
+				C318015F276A765100685E08 /* TodoItemCell.swift in Sources */,
+				C3180150276A3E4E00685E08 /* TodoList+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +484,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BranchTodo/Preview Content\"";
@@ -453,6 +514,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BranchTodo/Preview Content\"";
